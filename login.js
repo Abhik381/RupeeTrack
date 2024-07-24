@@ -2,6 +2,7 @@ var form = document.querySelector("form");
 var email = document.getElementById("email");
 var contact = document.getElementById("contact");
 var password = document.getElementById("password");
+var eye = document.querySelector(".eye");
 
 var payload = {
   email: "",
