@@ -25,3 +25,17 @@ var payload = {
    contact.value = "";
    password.value = "";
  })
+
+eye.addEventListener("click", function(){
+   if (count == 0) {
+     eye.classList.remove("ri-eye-close-line");
+     eye.classList.add("ri-eye-2-line");
+     password.type = "text";
+     count = 1;
+   } else {
+     eye.classList.remove("ri-eye-2-line");
+     eye.classList.add("ri-eye-close-line");
+     password.type = "password";
+     count = 0;
+   }
+ })
