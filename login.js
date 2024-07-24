@@ -10,6 +10,8 @@ var payload = {
   contact
 };
 
+var count = 0;
+
  email.addEventListener("input", function(e){
   payload.email =e.target.value;
  })
