@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RupeeTrack</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+   <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="w-full h-screen bg-gray-300">
+    <div class="navigation-bar w-full h-20 bg-red-600 flex items-center justify-between p-5">
+      <div>
+        <a href="/">
+        <h1 class="text-xl flex-col leading-5 font-bold">
+          <span class="block">Rupee</span>
+          <span class="block ml-10">Track</span>
+        </h1>
+        </a>
+      </div>
+      <div class="flex gap-5 text-2xl">
+        <i class="ri-notification-4-line"></i>
+        <i class="menu ri-menu-3-line"></i>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-center flex-col">
+      <h1 class="text-3xl font-semibold capitalize mt-5">Add your Income</h1>
+<form class="flex flex-col items-center justify-center gap-5 w-full px-10">
+  <div class="w-full">
+    <label for="website-admin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rupees: </label>
+  <div class="flex">
+    <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+  <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+</svg>
+    </span>
+    <input type="number" id="website-admin" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" name="rupee" placeholder="rupee">
+  </div>
+  </div>
+  <div class="w-full">
+  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type of Money:</label>
+  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" name="typeOfMoney">
+
+    <option>Cash</option>
+    <option>Bank</option>
+    <option>UPI</option>
+    <option>Card</option>
+  </select>
+  </div>
+  <div class="w-full">
+  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your description: </label>
+  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 resize-none outline-none" name="description" placeholder="Leave a description..."></textarea>
+  </div>
+  <input type="button" value="Add" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-7 py-2.5 text-center me-2 mb-2">
+</form>
+    </div>
+  </div>
+</body>
+
+</html>
