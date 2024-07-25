@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RupeesTrack-expenses</title>
-   <link rel="icon" href="logo.jpg" type="image/x-icon">
+  <title>RupeeTrack</title>
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
    <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
   <script src="https://cdn.tailwindcss.com"></script>
+  
+ 
 </head>
 
 <body>
-<div class=" w-full h-screen bg-black text-white overflow-hidden">
+  <div class="w-[100vw] h-[100vh] relative">
+  <div class=" w-full h-screen bg-black text-white overflow-hidden">
     <div class="navigation-bar w-full h-20 bg-red-600 flex items-center justify-between p-5">
       <div>
         <a href="/">
@@ -26,11 +29,11 @@
       </div>
       <div class="flex gap-5 text-2xl">
         <i class="ri-notification-4-line"></i>
-        <i class="ri-menu-3-line"></i>
+        <i class="menu ri-menu-3-line"></i>
       </div>
     </div>
     <div class="w-full h-5 p-5 bg-green-600 flex items-center justify-between">
-      <span class="px-5 py-1 rounded border border-zinc-300 "><a href="/">Income</a></span>
+      <span class="px-5 py-1 rounded border border-zinc-300"><a href="/">Income</a></span>
       <span class="px-5 py-1 rounded border border-zinc-300 bg-gray-200 text-blue-400"><a href="./expenses.html">Expenses</a></span>
       <span class="px-5 py-1 rounded border border-zinc-300"><a href="./chart.html">Chart</a></span>
     </div>
@@ -87,7 +90,8 @@
         <i class="ri-add-fill"></i>
       </a>
     </div>
-</div>
+  </div>
+  
    <div class="menu-bar w-full h-screen bg-white absolute top-0 hidden">
     <div class="w-full h-20 p-2 bg-gray-200 text-3xl text-right ">
       <i class="close inline-block mt-3 ri-close-large-fill"></i>
@@ -100,9 +104,10 @@
           <li><a href="./login.html">Log in</a></li>
     </ul>
   </div>
+ 
   </div>
-</div>
-  <script src="express.js"></script>
+  
+  <script src="expenses.js"></script>
 </body>
 
 </html>
